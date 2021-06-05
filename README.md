@@ -18,5 +18,7 @@ In `text_translator.py`, we use googletrans to translate the obtained text.
 
 Run the following command in the terminal:
 
-`python main.py`
+```
+python main.py
+```
 
