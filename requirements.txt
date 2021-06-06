@@ -1,0 +1,3 @@
+pytesseract==0.3.7
+googletrans==3.1.0a0
+Pillow==8.2.0
