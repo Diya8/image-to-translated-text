@@ -1,6 +1,7 @@
 import pytesseract
 from PIL import Image
 import io
+import os
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
@@ -17,3 +18,5 @@ def image_reader(image_file, image_text_file):
 
     with io.open('temp.txt', encoding='utf-8') as f:
         d.write(''.join(line for line in f if not line.isspace()))
+
+    os.remove('temp.txt')

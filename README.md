@@ -8,19 +8,21 @@ This project uses:
 3. [PIL](https://pillow.readthedocs.io/en/stable/reference/Image.html)
 4. [googletrans](https://pypi.org/project/googletrans/)
 
-The image file should be initialized into `image_file` in `main.py` and saved in the images folder.
+## How to run
+
+The image file path can be given as command line argument.
+Run the following command in the terminal:
+
+```
+python main.py path/filename
+```
+Example:
+```
+python main.py images/ch1.png
+```
 
 In `img_reader.py`, `image_reader()` gets the image and converts its contents to a string. The language of the text in the image is mentioned in `image_to_string()`.
 
 `text = pytesseract.image_to_string(Image.open(image_file), lang='chi_tra')`
 
-In `text_translator.py`, we use googletrans to translate the obtained text.
-
-## How to run
-
-Run the following command in the terminal:
-
-```
-python main.py
-```
-
+In `text_translator.py`, googletrans is used to translate the obtained text.
