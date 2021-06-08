@@ -4,9 +4,8 @@ Translation of foreign languages using Image Analytics and Data Extraction
 
 This project uses: 
 1. [pytesseract](https://pypi.org/project/pytesseract/)
-2. [io](https://docs.python.org/3/library/io.html)
-3. [PIL](https://pillow.readthedocs.io/en/stable/reference/Image.html)
-4. [googletrans](https://pypi.org/project/googletrans/)
+2. [PIL](https://pillow.readthedocs.io/en/stable/reference/Image.html)
+3. [googletrans](https://pypi.org/project/googletrans/)
 
 ## How to run
 
