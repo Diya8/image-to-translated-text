@@ -1,5 +1,5 @@
 from googletrans import Translator
-import io
+import io, os
 
 def translate_text(image_text_file, output_file):
 	translator = Translator(service_urls = ['translate.googleapis.com'])
@@ -9,7 +9,13 @@ def translate_text(image_text_file, output_file):
 	lines = f.readlines()
 
 	results = translator.translate(lines)
+
+	print("\nTranslated text:\n")
 	for r in results:
 		t.write(r.text+'\n')
+		print(r.text)
 	f.close()
 	t.close()
+	os.remove(image_text_file)
+	os.remove(output_file)
+	print()

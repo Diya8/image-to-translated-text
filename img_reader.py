@@ -1,7 +1,5 @@
-import pytesseract
 from PIL import Image
-import io
-import os
+import io, os, pytesseract
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 

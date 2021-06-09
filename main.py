@@ -1,6 +1,4 @@
-import img_reader
-import text_translator
-import sys
+import img_reader, text_translator, sys
 
 def main():
 	
@@ -13,6 +11,6 @@ def main():
 	img_reader.image_reader(image_file, image_text_file)
 	print('Obtained text from image!')
 	text_translator.translate_text(image_text_file, output_file)
-	print('Translated text saved in ' + output_file + ' successfully!')
+
 if __name__ == '__main__':
 	main()
